@@ -52,7 +52,7 @@ Then, log in using the API of your W&B account and the commands:
 import wandb
 wandb.login()
 ```
-Then, in order to run a sweep instead of a single run, change back the penultimate section of the code:
+In order to run a sweep instead of a single run, change back the penultimate section of the code:
 ```
 %%capture output
 
@@ -66,4 +66,5 @@ wandb.agent(sweep_id="noaavra/DattNet/x2w9ltj4", function=main, count=2)
 
 ### So What Is Left To Do
 We left throught the code a few `TODO` comments, explaining the reamining bugs and problems to fix.
+
 GOOD LUCK!
