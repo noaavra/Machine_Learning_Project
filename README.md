@@ -1,2 +1,4 @@
-# Machine_Learning_Project
-DAttNet code, 13/09/23 version
+# Machine Learning for Novel X-ray Imaging
+**Authors: Moe Shy & Noa Avrahamov**
+
+aaa
