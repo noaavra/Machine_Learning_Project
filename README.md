@@ -34,8 +34,8 @@ Our project consists of a few distinct code parts, each contained in its respect
 # How to Use
 ### Start a Run
 To run the code as a single run (and not a sweep), follow these steps:
-1. Open the 'DattNet_code_13_09_23_version.ipynb' file located in the main folder.
-2. Within the 'Parameters File' section, you can experiment with various parameters directly (learning rate, number of epochs, which datasets to use and more)
+1. Open the `DattNet_code_13_09_23_version.ipynb` file located in the main folder.
+2. Within the `Parameters File` section, you can experiment with various parameters directly (learning rate, number of epochs, which datasets to use and more)
 3. In the penultimate code section of the code, comment the sweep command in the following way to run the main:
 ```
 %%capture output
@@ -65,5 +65,5 @@ wandb.agent(sweep_id="noaavra/DattNet/x2w9ltj4", function=main, count=2)
 - You can change the `count` parameter to match the number of runs you want in the sweep.
 
 ### So What Is Left To Do
-We left throught the code a few 'TODO' comments, explaining the reamining bugs and problems to fix.
+We left throught the code a few `TODO` comments, explaining the reamining bugs and problems to fix.
 GOOD LUCK!
