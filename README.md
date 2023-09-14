@@ -10,7 +10,10 @@ Our goal is to improve the resolution of the reconstructed images of the new X-r
 We used the coco dataset, which you can download from [here](https://cocodataset.org/#download).
 Please refer to the dataset's documentation for usage terms, licensing, and any specific instructions provided by the dataset creators.
 
-We also used the Mnist dataset. In order to download it, change the following lines in the function load_data_mnist in the code:
+The coco dataset we used - for training and testing - is already uploaded to a storage bucket in the Google Cloud Platform, called `our_train_test_data`.
+This bucket holds the datasets, the loaders (generated data from previous runs) and the results (the reconstructed images) of previous runs.
+
+We also used the Mnist dataset. In order to download it (locally in the folder of the code), change the following lines in the function load_data_mnist in the code:
 ```
 train_data = datasets.MNIST(root='data', train=True, download=True, transform=transform)
 test_data = datasets.MNIST(root='data', train=False, download=True, transform=transform)
@@ -35,7 +38,7 @@ Our project consists of a few distinct code parts, each contained in its respect
 ### Start a Run
 To run the code as a single run (and not a sweep), follow these steps:
 1. Open the `DattNet_code_13_09_23_version.ipynb` file located in the main folder.
-2. Within the `Parameters File` section, you can experiment with various parameters directly (learning rate, number of epochs, which datasets to use and more)
+2. Within the `Parameters section` section, you can experiment with various parameters directly (learning rate, number of epochs, which datasets to use and more)
 3. In the penultimate code section of the code, comment the sweep command in the following way to run the main:
 ```
 %%capture output
@@ -66,5 +69,7 @@ wandb.agent(sweep_id="noaavra/DattNet/x2w9ltj4", function=main, count=2)
 
 ### So What Is Left To Do
 We left throught the code a few `TODO` comments, explaining the reamining bugs and problems to fix.
+
+Other than that, you should continue running sweeps using W&B, in order to find the right parameters (such as learning rate and number of epochs) for the runs, that will get better results.
 
 GOOD LUCK!
