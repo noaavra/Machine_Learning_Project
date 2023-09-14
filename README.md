@@ -27,12 +27,12 @@ pip install torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/wh
 ```
 ### Code Parts
 Our project consists of a few distinct code parts, each contained in its respective section:
-1. **DAttNet:** This section sets the neural network DAttNet for this code.
+1. **DattNet:** This section sets the neural network DAttNet for this code.
 2. **Data Generation:** This section contains the code for uploading the datasets, and performing the necessary calculations on the datasets before the training.
 3. **Log and Support:** These sections contain various support functions such as hitogram-equalization, and logging function.
 4. **Training and Testing:** These sections hold the codes for the training and testing of the model, respectively.
 5. **Parameters:** In this section there is a function that gets all the parameters that can be modified for a specific run.
-6. **Main:** This section holds the main function and the sweep command. 
+6. **Main:** This section holds the main function and the sweep command.
 
 # How to Use
 ### Start a Run
